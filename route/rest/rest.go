@@ -1,16 +1,18 @@
 package rest
 
 import (
+	userPb "api-gateway/domain/user/pb"
 	"net/http"
 
 	"github.com/labstack/echo/v4"
 )
 
 type Rest struct {
+	userService userPb.UserServiceClient
 }
 
-func New() *Rest {
-	return &Rest{}
+func New(userService userPb.UserServiceClient) *Rest {
+	return &Rest{userService}
 }
 
 func (r *Rest) Register(e *echo.Echo) {
