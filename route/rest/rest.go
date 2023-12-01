@@ -1,8 +1,9 @@
 package rest
 
 import (
-	userPb "api-gateway/domain/user/pb"
 	"net/http"
+
+	userPb "github.com/Mitra-Apps/api-gateway/domain/user/pb"
 
 	"github.com/labstack/echo/v4"
 )

@@ -1,12 +1,13 @@
 package main
 
 import (
-	userPb "api-gateway/domain/user/pb"
-	"api-gateway/lib"
-	"api-gateway/route/rest"
 	"flag"
 	"log"
 	"net/http"
+
+	userPb "github.com/Mitra-Apps/api-gateway/domain/user/pb"
+	"github.com/Mitra-Apps/api-gateway/lib"
+	"github.com/Mitra-Apps/api-gateway/route/rest"
 
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
