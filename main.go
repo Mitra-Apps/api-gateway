@@ -5,9 +5,9 @@ import (
 	"log"
 	"net/http"
 
-	userPb "github.com/Mitra-Apps/api-gateway/domain/user/pb"
-	"github.com/Mitra-Apps/api-gateway/lib"
-	"github.com/Mitra-Apps/api-gateway/route/rest"
+	userPb "github.com/Mitra-Apps/be-api-gateway/domain/user/pb"
+	"github.com/Mitra-Apps/be-api-gateway/lib"
+	"github.com/Mitra-Apps/be-api-gateway/route/rest"
 
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"

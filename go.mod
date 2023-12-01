@@ -1,4 +1,4 @@
-module github.com/Mitra-Apps/api-gateway
+module github.com/Mitra-Apps/be-api-gateway
 
 go 1.21.3
 
