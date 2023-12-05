@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 
-	userPb "github.com/Mitra-Apps/be-api-gateway/domain/user/pb"
+	userPb "github.com/Mitra-Apps/be-api-gateway/domain/user/proto"
 	"github.com/Mitra-Apps/be-api-gateway/lib"
 	"github.com/Mitra-Apps/be-api-gateway/route/rest"
 

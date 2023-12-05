@@ -3,13 +3,13 @@ package rest
 import (
 	"net/http"
 
-	"github.com/Mitra-Apps/be-api-gateway/domain/user/pb"
+	pb "github.com/Mitra-Apps/be-api-gateway/domain/user/proto"
 
 	"github.com/labstack/echo/v4"
 )
 
 func (r *Rest) getUsers(e echo.Context) error {
-	userList, err := r.userService.GetUsers(e.Request().Context(), &pb.GetUserListRequest{})
+	userList, err := r.userService.GetUsers(e.Request().Context(), &pb.GetUsersRequest{})
 	if err != nil {
 		echo.NewHTTPError(http.StatusInternalServerError, err)
 	}

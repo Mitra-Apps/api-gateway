@@ -3,7 +3,7 @@ package rest
 import (
 	"net/http"
 
-	userPb "github.com/Mitra-Apps/be-api-gateway/domain/user/pb"
+	userPb "github.com/Mitra-Apps/be-api-gateway/domain/user/proto"
 
 	"github.com/labstack/echo/v4"
 )
