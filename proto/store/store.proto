@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package proto;
 
-option go_package = "github.com/Mitra-Apps/be-store-service/domain/proto/store;store";
+option go_package = "github.com/Mitra-Apps/be-api-gateway/domain/proto/store;store";
 
 import "google/api/annotations.proto";
 
