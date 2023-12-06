@@ -5,7 +5,8 @@ import (
 	"log"
 	"net/http"
 
-	userPb "github.com/Mitra-Apps/be-api-gateway/domain/user/proto"
+	storePb "github.com/Mitra-Apps/be-api-gateway/domain/proto/store"
+	userPb "github.com/Mitra-Apps/be-api-gateway/domain/proto/user"
 	"github.com/Mitra-Apps/be-api-gateway/lib"
 	"github.com/Mitra-Apps/be-api-gateway/route/rest"
 
@@ -28,18 +29,26 @@ func main() {
 		AllowMethods: []string{http.MethodGet, http.MethodOptions, http.MethodPost, http.MethodDelete, http.MethodPut},
 	}))
 
-	userGrpcAddr := flag.String("addr", lib.GetEnv("GRPC_USER_HOST"), "User service host")
+	userGrpcAddr := flag.String("userGrpcAddr", lib.GetEnv("GRPC_USER_HOST"), "User service host")
+	storeGrpcAddr := flag.String("storeGrpcAddr", lib.GetEnv("GRPC_STORE_HOST"), "Store service host")
+
 	userGrpcConn, err := grpc.Dial(*userGrpcAddr, grpc.WithTransportCredentials(insecure.NewCredentials()))
 	if err != nil {
-		log.Fatal("Cannot connect to grpc server ", err)
+		log.Fatal("Cannot connect to user grpc server ", err)
+	}
+	storeGrpcConn, err := grpc.Dial(*storeGrpcAddr, grpc.WithTransportCredentials(insecure.NewCredentials()))
+	if err != nil {
+		log.Fatal("Cannot connect to store grpc server ", err)
 	}
 	defer func() {
 		log.Println("Closing connection ...")
+		storeGrpcConn.Close()
 		userGrpcConn.Close()
 	}()
 
-	userGrpCServiceClient := userPb.NewUserServiceClient(userGrpcConn)
-	rest.New(userGrpCServiceClient).Register(e)
+	userGrpcServiceClient := userPb.NewUserServiceClient(userGrpcConn)
+	storeGrpcServiceClient := storePb.NewStoreServiceClient(storeGrpcConn)
+	rest.New(userGrpcServiceClient, storeGrpcServiceClient).Register(e)
 
 	e.Logger.Fatal(e.Start(lib.GetEnv("APP_PORT")))
 }
