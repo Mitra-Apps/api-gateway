@@ -8,7 +8,7 @@ import (
 	connect "connectrpc.com/connect"
 	context "context"
 	errors "errors"
-	store "github.com/Mitra-Apps/be-store-service/domain/proto/store"
+	store "github.com/Mitra-Apps/be-api-gateway/domain/proto/store"
 	http "net/http"
 	strings "strings"
 )
