@@ -1,0 +1,117 @@
+basePath: /
+definitions:
+  store.GetStoresResponse:
+    properties:
+      stores:
+        items:
+          $ref: '#/definitions/store.Store'
+        type: array
+    type: object
+  store.Store:
+    properties:
+      address:
+        type: string
+      id:
+        type: string
+      is_active:
+        type: boolean
+      logoImageId:
+        type: string
+      map_location:
+        type: string
+      name:
+        type: string
+      status:
+        type: string
+      user_id:
+        type: string
+    type: object
+  user.GetUsersResponse:
+    properties:
+      users:
+        items:
+          $ref: '#/definitions/user.User'
+        type: array
+    type: object
+  user.User:
+    properties:
+      access_token:
+        type: string
+      avatar_image_id:
+        type: string
+      email:
+        type: string
+      id:
+        type: string
+      is_active:
+        type: boolean
+      password:
+        type: string
+      phone_number:
+        type: string
+      username:
+        type: string
+    type: object
+host: localhost:8080
+info:
+  contact:
+    email: support@swagger.io
+    name: API Support
+    url: http://www.swagger.io/support
+  description: This is a sample server server.
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  termsOfService: http://swagger.io/terms/
+  title: Echo Swagger Example API
+  version: "1.0"
+paths:
+  /:
+    get:
+      consumes:
+      - '*/*'
+      description: get the status of server.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Show the status of server.
+      tags:
+      - root
+  /api/v1/store:
+    get:
+      consumes:
+      - '*/*'
+      description: Display all stores.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/store.GetStoresResponse'
+      summary: Display all stores
+      tags:
+      - root
+  /api/v1/user:
+    get:
+      consumes:
+      - '*/*'
+      description: Display all users.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/user.GetUsersResponse'
+      summary: Display all users
+      tags:
+      - root
+schemes:
+- http
+swagger: "2.0"
