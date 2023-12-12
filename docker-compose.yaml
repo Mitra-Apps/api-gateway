@@ -1,0 +1,15 @@
+version: "3.0"
+services:
+  app:
+    build: .
+    ports:
+      - 7000:7000
+    environment:
+      - APP_PORT=:7000
+      - GRPC_USER_HOST=localhost:9000
+      - GRPC_STORE_HOST=localhost:9100
+      - JWT_SECRET=secret
+      - JWT_EXPIRED_TIME=6h
+volumes:
+  db:
+    driver: local

@@ -9,13 +9,12 @@ import (
 	userPb "github.com/Mitra-Apps/be-api-gateway/domain/proto/user"
 	"github.com/Mitra-Apps/be-api-gateway/lib"
 	"github.com/Mitra-Apps/be-api-gateway/route/rest"
+	"github.com/joho/godotenv"
 
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
-
-	"github.com/joho/godotenv"
 
 	echoSwagger "github.com/swaggo/echo-swagger"
 
@@ -38,7 +37,7 @@ import (
 // @BasePath /
 // @schemes http
 func main() {
-	envInit()
+	godotenv.Load()
 	e := echo.New()
 	e.Use(middleware.Logger())
 	e.Use(middleware.Recover())
@@ -74,13 +73,6 @@ func main() {
 	e.GET("/swagger/*", echoSwagger.WrapHandler)
 
 	e.Logger.Fatal(e.Start(lib.GetEnv("APP_PORT")))
-}
-
-func envInit() {
-	// loads values from .env into the system
-	if err := godotenv.Load(); err != nil {
-		log.Fatalln("No .env file found")
-	}
 }
 
 // HealthCheck godoc
