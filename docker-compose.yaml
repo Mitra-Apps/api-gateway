@@ -6,10 +6,15 @@ services:
       - 7000:7000
     environment:
       - APP_PORT=:7000
-      - GRPC_USER_HOST=localhost:9000
-      - GRPC_STORE_HOST=localhost:9100
+      - GRPC_USER_HOST=user-service:9000
+      - GRPC_STORE_HOST=:9100
       - JWT_SECRET=secret
       - JWT_EXPIRED_TIME=6h
+    networks:
+      - grpc_network
 volumes:
   db:
     driver: local
+networks:
+  grpc_network:
+    external: true
