@@ -22,6 +22,7 @@ func (r *Rest) Register(e *echo.Echo) {
 	e.GET("/ping", r.ping)
 	user := e.Group("/api/v1/user")
 	user.GET("", r.getUsers)
+	user.POST("/login", r.login)
 	store := e.Group("/api/v1/store")
 	store.GET("", r.getStores)
 }

@@ -18,7 +18,7 @@ import (
 // generated with a version of connect newer than the one compiled into your binary. You can fix the
 // problem by either regenerating this code with an older version of connect or updating the connect
 // version compiled into your binary.
-const _ = connect.IsAtLeastVersion0_1_0
+const _ = connect.IsAtLeastVersion1_13_0
 
 const (
 	// StoreServiceName is the fully-qualified name of the StoreService service.
@@ -35,6 +35,12 @@ const (
 const (
 	// StoreServiceGetStoresProcedure is the fully-qualified name of the StoreService's GetStores RPC.
 	StoreServiceGetStoresProcedure = "/proto.StoreService/GetStores"
+)
+
+// These variables are the protoreflect.Descriptor objects for the RPCs defined in this package.
+var (
+	storeServiceServiceDescriptor         = store.File_proto_store_store_proto.Services().ByName("StoreService")
+	storeServiceGetStoresMethodDescriptor = storeServiceServiceDescriptor.Methods().ByName("GetStores")
 )
 
 // StoreServiceClient is a client for the proto.StoreService service.
@@ -55,7 +61,8 @@ func NewStoreServiceClient(httpClient connect.HTTPClient, baseURL string, opts .
 		getStores: connect.NewClient[store.GetStoresRequest, store.GetStoresResponse](
 			httpClient,
 			baseURL+StoreServiceGetStoresProcedure,
-			opts...,
+			connect.WithSchema(storeServiceGetStoresMethodDescriptor),
+			connect.WithClientOptions(opts...),
 		),
 	}
 }
@@ -84,7 +91,8 @@ func NewStoreServiceHandler(svc StoreServiceHandler, opts ...connect.HandlerOpti
 	storeServiceGetStoresHandler := connect.NewUnaryHandler(
 		StoreServiceGetStoresProcedure,
 		svc.GetStores,
-		opts...,
+		connect.WithSchema(storeServiceGetStoresMethodDescriptor),
+		connect.WithHandlerOptions(opts...),
 	)
 	return "/proto.StoreService/", http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		switch r.URL.Path {

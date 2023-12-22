@@ -1,6 +1,7 @@
 package auth
 
 import (
+	"context"
 	"net/http"
 	"time"
 
@@ -15,7 +16,7 @@ type JwtCustomClaim struct {
 	jwt.RegisteredClaims
 }
 
-func GenerateToken(c echo.Context, username string) (string, *echo.HTTPError) {
+func GenerateToken(c context.Context, username string) (string, *echo.HTTPError) {
 	expireTime, err := time.ParseDuration(lib.GetEnv("JWT_EXPIRED_TIME"))
 	if err != nil {
 		return "", echo.NewHTTPError(http.StatusBadRequest, "Invalid JWT expired time")
