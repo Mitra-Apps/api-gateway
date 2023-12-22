@@ -1,7 +1,6 @@
 version: "3.0"
 services:
   app:
-    image: 872583825157.dkr.ecr.ap-southeast-1.amazonaws.com/mitraku-be-api-gateway:${COMMIT_HASH}
     build: .
     ports:
       - 7000:7000
