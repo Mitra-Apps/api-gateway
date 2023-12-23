@@ -12,9 +12,6 @@ services:
       - JWT_EXPIRED_TIME=6h
     networks:
       - grpc_network
-volumes:
-  db:
-    driver: local
 networks:
   grpc_network:
     external: true
