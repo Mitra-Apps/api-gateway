@@ -1,20 +1,17 @@
 version: "3.0"
 services:
-  app:
+  prod-api-gateway:
     image: ${ECR_REGISTRY}/${IMAGE_NAME}:${COMMIT_HASH}
     ports:
-      - 7000:7000
+      - 9000:9000
     environment:
-      - APP_PORT=:7000
-      - GRPC_USER_HOST=user-service:9000
-      - GRPC_STORE_HOST=store-service:9100
+      - APP_PORT=:9000
+      - GRPC_USER_HOST=prod-user-service:9100
+      - GRPC_STORE_HOST=prod-store-service:9200
       - JWT_SECRET=secret
       - JWT_EXPIRED_TIME=6h
     networks:
       - grpc_network
-volumes:
-  db:
-    driver: local
 networks:
   grpc_network:
     external: true
