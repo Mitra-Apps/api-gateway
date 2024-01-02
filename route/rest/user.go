@@ -3,6 +3,7 @@ package rest
 import (
 	"net/http"
 
+	"github.com/Mitra-Apps/be-api-gateway/auth"
 	pb "github.com/Mitra-Apps/be-api-gateway/domain/proto/user"
 
 	"github.com/labstack/echo/v4"
@@ -22,4 +23,25 @@ func (r *Rest) getUsers(e echo.Context) error {
 		echo.NewHTTPError(http.StatusInternalServerError, err)
 	}
 	return e.JSON(http.StatusOK, userList)
+}
+
+func (r *Rest) login(e echo.Context) error {
+	u := new(pb.UserLoginRequest)
+	if err := e.Bind(u); err != nil {
+		echo.NewHTTPError(http.StatusBadRequest, err)
+	}
+	ctx := e.Request().Context()
+	user, err := r.userService.Login(ctx, u)
+	if err != nil {
+		echo.NewHTTPError(http.StatusInternalServerError, err)
+	}
+	jwt, err := auth.GenerateToken(ctx, user.User.Username)
+	if err != nil {
+		echo.NewHTTPError(http.StatusInternalServerError, err)
+	}
+	response := map[string]interface{}{
+		"jwt": jwt,
+	}
+
+	return e.JSON(http.StatusOK, response)
 }
