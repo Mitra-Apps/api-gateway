@@ -5,6 +5,8 @@ import (
 
 	storePb "github.com/Mitra-Apps/be-api-gateway/domain/proto/store"
 	userPb "github.com/Mitra-Apps/be-api-gateway/domain/proto/user"
+	"google.golang.org/grpc/codes"
+	"google.golang.org/grpc/status"
 
 	"github.com/labstack/echo/v4"
 )
@@ -29,4 +31,55 @@ func (r *Rest) Register(e *echo.Echo) {
 
 func (r *Rest) ping(e echo.Context) error {
 	return e.String(http.StatusOK, "pong")
+}
+
+func convertGrpcToHttpErrorResponse(err error) *echo.HTTPError {
+	// Handling gRPC errors
+	statusCode, ok := status.FromError(err)
+	if ok {
+		httpStatusCode := grpcStatusToHTTPStatus(statusCode.Code())
+		return echo.NewHTTPError(httpStatusCode, statusCode.Message())
+	}
+	return echo.NewHTTPError(http.StatusInternalServerError, "Failed getting error message")
+}
+
+func grpcStatusToHTTPStatus(grpcCode codes.Code) int {
+	switch grpcCode {
+	case codes.OK:
+		return http.StatusOK
+	case codes.Canceled:
+		return http.StatusRequestTimeout
+	case codes.Unknown:
+		return http.StatusInternalServerError
+	case codes.InvalidArgument:
+		return http.StatusBadRequest
+	case codes.DeadlineExceeded:
+		return http.StatusGatewayTimeout
+	case codes.NotFound:
+		return http.StatusNotFound
+	case codes.AlreadyExists:
+		return http.StatusConflict
+	case codes.PermissionDenied:
+		return http.StatusForbidden
+	case codes.Unauthenticated:
+		return http.StatusUnauthorized
+	case codes.ResourceExhausted:
+		return http.StatusTooManyRequests
+	case codes.FailedPrecondition:
+		return http.StatusPreconditionFailed
+	case codes.Aborted:
+		return http.StatusConflict
+	case codes.OutOfRange:
+		return http.StatusRequestedRangeNotSatisfiable
+	case codes.Unimplemented:
+		return http.StatusNotImplemented
+	case codes.Internal:
+		return http.StatusInternalServerError
+	case codes.Unavailable:
+		return http.StatusServiceUnavailable
+	case codes.DataLoss:
+		return http.StatusInternalServerError
+	default:
+		return http.StatusInternalServerError
+	}
 }
