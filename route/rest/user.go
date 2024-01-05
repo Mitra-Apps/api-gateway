@@ -33,7 +33,7 @@ func (r *Rest) login(e echo.Context) error {
 	ctx := e.Request().Context()
 	user, err := r.userService.Login(ctx, u)
 	if err != nil {
-		echo.NewHTTPError(http.StatusInternalServerError, err)
+		return convertGrpcToHttpErrorResponse(err)
 	}
 	jwt, err := auth.GenerateToken(ctx, user.User.Username)
 	if err != nil {
