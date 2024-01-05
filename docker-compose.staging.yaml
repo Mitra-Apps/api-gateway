@@ -8,6 +8,7 @@ services:
       - APP_PORT=:7000
       - GRPC_USER_HOST=stag-user-service:7100
       - GRPC_STORE_HOST=stag-store-service:7200
+      - HTTP_STORE_HOST=stag-store-service:7201
       - JWT_SECRET=secret
       - JWT_EXPIRED_TIME=6h
     networks:

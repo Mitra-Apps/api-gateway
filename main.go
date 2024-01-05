@@ -5,10 +5,10 @@ import (
 	"log"
 	"net/http"
 
-	storePb "github.com/Mitra-Apps/be-api-gateway/domain/proto/store"
-	userPb "github.com/Mitra-Apps/be-api-gateway/domain/proto/user"
 	"github.com/Mitra-Apps/be-api-gateway/lib"
 	"github.com/Mitra-Apps/be-api-gateway/route/rest"
+	storePb "github.com/Mitra-Apps/be-store-service/domain/proto/store"
+	userPb "github.com/Mitra-Apps/be-user-service/domain/proto/user"
 	"github.com/joho/godotenv"
 
 	"github.com/labstack/echo/v4"
