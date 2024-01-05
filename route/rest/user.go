@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	"github.com/Mitra-Apps/be-api-gateway/auth"
-	pb "github.com/Mitra-Apps/be-api-gateway/domain/proto/user"
+	pb "github.com/Mitra-Apps/be-user-service/domain/proto/user"
 
 	"github.com/labstack/echo/v4"
 )

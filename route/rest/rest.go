@@ -3,8 +3,8 @@ package rest
 import (
 	"net/http"
 
-	storePb "github.com/Mitra-Apps/be-api-gateway/domain/proto/store"
-	userPb "github.com/Mitra-Apps/be-api-gateway/domain/proto/user"
+	storePb "github.com/Mitra-Apps/be-store-service/domain/proto/store"
+	userPb "github.com/Mitra-Apps/be-user-service/domain/proto/user"
 
 	"github.com/labstack/echo/v4"
 )
@@ -23,8 +23,9 @@ func (r *Rest) Register(e *echo.Echo) {
 	user := e.Group("/api/v1/user")
 	user.GET("", r.getUsers)
 	user.POST("/login", r.login)
-	store := e.Group("/api/v1/store")
-	store.GET("", r.getStores)
+
+	store := e.Group("/api/v1/stores")
+	r.registerStoreService(store)
 }
 
 func (r *Rest) ping(e echo.Context) error {
