@@ -33,4 +33,5 @@ func (r *Rest) registerStoreService(e *echo.Group) {
 	e.POST("", echo.WrapHandler(httpProxy))
 	e.GET("/:id", echo.WrapHandler(httpProxy))
 	e.GET("", echo.WrapHandler(httpProxy))
+	e.PUT("/active-toggle/:is_active", echo.WrapHandler(httpProxy))
 }
