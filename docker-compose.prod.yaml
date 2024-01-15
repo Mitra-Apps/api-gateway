@@ -7,6 +7,7 @@ services:
     environment:
       - APP_PORT=:9000
       - GRPC_USER_HOST=prod-user-service:9100
+      - HTTP_USER_HOST=prod-user-service:9101
       - GRPC_STORE_HOST=prod-store-service:9200
       - JWT_SECRET=secret
       - JWT_EXPIRED_TIME=6h

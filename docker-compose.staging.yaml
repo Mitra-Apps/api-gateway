@@ -7,6 +7,7 @@ services:
     environment:
       - APP_PORT=:7000
       - GRPC_USER_HOST=stag-user-service:7100
+      - HTTP_USER_HOST=stag-user-service:7101
       - GRPC_STORE_HOST=stag-store-service:7200
       - HTTP_STORE_HOST=stag-store-service:7201
       - JWT_SECRET=secret
