@@ -4,7 +4,7 @@ go 1.21.3
 
 require (
 	github.com/Mitra-Apps/be-store-service v0.0.0-20240110070248-3530cf32e247
-	github.com/Mitra-Apps/be-user-service v0.0.0-20240103035332-b6dfb204cb7a
+	github.com/Mitra-Apps/be-user-service v0.0.0-20240114171714-281393c01195
 	github.com/golang-jwt/jwt/v5 v5.2.0
 	github.com/joho/godotenv v1.5.1
 	github.com/labstack/echo-jwt/v4 v4.2.0

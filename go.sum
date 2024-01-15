@@ -2,8 +2,8 @@ github.com/KyleBanks/depth v1.2.1 h1:5h8fQADFrWtarTdtDudMmGsC7GPbOAu6RVB3ffsVFHc
 github.com/KyleBanks/depth v1.2.1/go.mod h1:jzSb9d0L43HxTQfT+oSA1EEp2q+ne2uh6XgeJcm8brE=
 github.com/Mitra-Apps/be-store-service v0.0.0-20240110070248-3530cf32e247 h1:kQWYNXQHT/4dggnNjjW3i5yro2Awr4EFJgkpVJ/HAkQ=
 github.com/Mitra-Apps/be-store-service v0.0.0-20240110070248-3530cf32e247/go.mod h1:fSDkzFBoe3ON1N/QiDWTiM1uZXgMWVimRmWXgM19l4s=
-github.com/Mitra-Apps/be-user-service v0.0.0-20240103035332-b6dfb204cb7a h1:NF7MViYSM09E+BB4hooCcR0hJtmTPVbg5vP0rDKg2x4=
-github.com/Mitra-Apps/be-user-service v0.0.0-20240103035332-b6dfb204cb7a/go.mod h1:B2eJndMHYolJhJA7iIkB74k0y2jPZL1b/nzWkKidJ/A=
+github.com/Mitra-Apps/be-user-service v0.0.0-20240114171714-281393c01195 h1:sn6x8G6x3etgqTA+fDg2liPUG3jbAojg8g9cVT6WToc=
+github.com/Mitra-Apps/be-user-service v0.0.0-20240114171714-281393c01195/go.mod h1:wMvWxpGpImzMerKB1owryDiYnns2S2K1IetZbubITLs=
 github.com/creack/pty v1.1.9/go.mod h1:oKZEueFk5CKHvIhNR5MUki03XCEU+Q6VDXinZuGJ33E=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
