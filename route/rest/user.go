@@ -56,6 +56,7 @@ func (r *Rest) registerUserService(e *echo.Group) {
 	})
 
 	e.GET("", echo.WrapHandler(httpProxy))
+	e.POST("/login", echo.WrapHandler(httpProxy))
 	e.GET("/getrole", echo.WrapHandler(httpProxy))
 	e.POST("/register", echo.WrapHandler(httpProxy))
 	e.POST("/createrole", echo.WrapHandler(httpProxy))
