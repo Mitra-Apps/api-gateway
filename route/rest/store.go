@@ -5,6 +5,7 @@ import (
 	"net/url"
 	"os"
 
+	"github.com/Mitra-Apps/be-api-gateway/auth"
 	"github.com/labstack/echo/v4"
 )
 
@@ -33,5 +34,5 @@ func (r *Rest) registerStoreService(e *echo.Group) {
 	e.POST("", echo.WrapHandler(httpProxy))
 	e.GET("/:id", echo.WrapHandler(httpProxy))
 	e.GET("", echo.WrapHandler(httpProxy))
-	e.PUT("/active-toggle/:is_active", echo.WrapHandler(httpProxy))
+	e.PUT("/active-toggle/:is_active", echo.WrapHandler(httpProxy), auth.Required())
 }
