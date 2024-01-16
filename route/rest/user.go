@@ -2,6 +2,9 @@ package rest
 
 import (
 	"net/http"
+	"net/http/httputil"
+	"net/url"
+	"os"
 
 	"github.com/Mitra-Apps/be-api-gateway/auth"
 	pb "github.com/Mitra-Apps/be-user-service/domain/proto/user"
@@ -44,4 +47,17 @@ func (r *Rest) login(e echo.Context) error {
 	}
 
 	return e.JSON(http.StatusOK, response)
+}
+
+func (r *Rest) registerUserService(e *echo.Group) {
+	httpProxy := httputil.NewSingleHostReverseProxy(&url.URL{
+		Scheme: "http",
+		Host:   os.Getenv("HTTP_USER_HOST"),
+	})
+
+	e.GET("", echo.WrapHandler(httpProxy))
+	e.POST("/login", echo.WrapHandler(httpProxy))
+	e.GET("/getrole", echo.WrapHandler(httpProxy))
+	e.POST("/register", echo.WrapHandler(httpProxy))
+	e.POST("/createrole", echo.WrapHandler(httpProxy))
 }
