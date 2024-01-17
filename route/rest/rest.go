@@ -26,8 +26,7 @@ func (r *Rest) Register(e *echo.Echo) {
 	user.GET("", r.getUsers)
 	user.POST("/login", r.login)
 
-	store := e.Group("/api/v1/stores")
-	r.registerStoreService(store)
+	r.registerStoreService(e)
 }
 
 func (r *Rest) ping(e echo.Context) error {

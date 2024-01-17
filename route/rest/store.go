@@ -24,13 +24,19 @@ import (
 // 	return e.JSON(http.StatusOK, StoreList)
 // }
 
-func (r *Rest) registerStoreService(e *echo.Group) {
+func (r *Rest) registerStoreService(e *echo.Echo) {
 	httpProxy := httputil.NewSingleHostReverseProxy(&url.URL{
 		Scheme: "http",
 		Host:   os.Getenv("HTTP_STORE_HOST"),
 	})
 
-	e.POST("", echo.WrapHandler(httpProxy))
-	e.GET("/:id", echo.WrapHandler(httpProxy))
-	e.GET("", echo.WrapHandler(httpProxy))
+	api := e.Group("/api/v1/stores")
+	doc := e.Group("/docs/v1/stores")
+
+	api.POST("", echo.WrapHandler(httpProxy))
+	api.GET("/:id", echo.WrapHandler(httpProxy))
+	api.GET("", echo.WrapHandler(httpProxy))
+
+	doc.GET("", echo.WrapHandler(httpProxy))
+	doc.GET("/openapi.yaml", echo.WrapHandler(httpProxy))
 }
