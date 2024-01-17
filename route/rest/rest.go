@@ -21,10 +21,10 @@ func New(userService userPb.UserServiceClient, storeService storePb.StoreService
 }
 
 func (r *Rest) Register(e *echo.Echo) {
+	// Use custom gRPC error handling middleware
 	e.GET("/ping", r.ping)
-	user := e.Group("/api/v1/user")
-	user.GET("", r.getUsers)
-	user.POST("/login", r.login)
+	user := e.Group("/api/v1/users")
+	r.registerUserService(user)
 
 	r.registerStoreService(e)
 }
