@@ -36,6 +36,7 @@ func (r *Rest) registerStoreService(e *echo.Echo) {
 	api.POST("", echo.WrapHandler(httpProxy))
 	api.GET("/:id", echo.WrapHandler(httpProxy))
 	api.GET("", echo.WrapHandler(httpProxy))
+	api.PUT("/active-toggle/:is_active", echo.WrapHandler(httpProxy))
 
 	doc.GET("", echo.WrapHandler(httpProxy))
 	doc.GET("/openapi.yaml", echo.WrapHandler(httpProxy))
