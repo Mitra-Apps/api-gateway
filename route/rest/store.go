@@ -33,6 +33,8 @@ func (r *Rest) registerStoreService(e *echo.Echo) {
 	api := e.Group("/api/v1/stores")
 	doc := e.Group("/docs/v1/stores")
 
+	prodApi := e.Group("/api/v1/products")
+
 	api.POST("", echo.WrapHandler(httpProxy))
 	api.GET("/:id", echo.WrapHandler(httpProxy))
 	api.GET("", echo.WrapHandler(httpProxy))
@@ -41,4 +43,9 @@ func (r *Rest) registerStoreService(e *echo.Echo) {
 
 	doc.GET("", echo.WrapHandler(httpProxy))
 	doc.GET("/openapi.yaml", echo.WrapHandler(httpProxy))
+
+	prodApi.POST("", echo.WrapHandler(httpProxy))
+	e.POST("/api/v1/product-category", echo.WrapHandler(httpProxy))
+	e.POST("/api/v1/product-type", echo.WrapHandler(httpProxy))
+	e.POST("/api/v1/uom", echo.WrapHandler(httpProxy))
 }
