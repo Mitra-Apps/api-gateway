@@ -3,8 +3,8 @@ module github.com/Mitra-Apps/be-api-gateway
 go 1.21.3
 
 require (
-	github.com/Mitra-Apps/be-store-service v0.0.0-20240130063411-941254830f67
-	github.com/Mitra-Apps/be-user-service v0.0.0-20240130092449-024127b7fb20
+	github.com/Mitra-Apps/be-store-service v0.0.0-20240201091538-2f7807b52135
+	github.com/Mitra-Apps/be-user-service v0.0.0-20240130120004-24516988ac2e
 	github.com/golang-jwt/jwt/v5 v5.2.0
 	github.com/joho/godotenv v1.5.1
 	github.com/labstack/echo-jwt/v4 v4.2.0
@@ -19,7 +19,7 @@ require (
 	github.com/armon/go-radix v1.0.0 // indirect
 	github.com/dustin/go-humanize v1.0.1 // indirect
 	github.com/elastic/go-licenser v0.4.1 // indirect
-	github.com/elastic/go-sysinfo v1.11.2 // indirect
+	github.com/elastic/go-sysinfo v1.12.0 // indirect
 	github.com/elastic/go-windows v1.0.1 // indirect
 	github.com/envoyproxy/protoc-gen-validate v1.0.4 // indirect
 	github.com/ghodss/yaml v1.0.0 // indirect
