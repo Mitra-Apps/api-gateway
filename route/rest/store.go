@@ -34,6 +34,9 @@ func (r *Rest) registerStoreService(e *echo.Echo) {
 	doc := e.Group("/docs/v1/stores")
 
 	prodApi := e.Group("/api/v1/products")
+	prodCatApi := e.Group("/api/v1/product-category")
+	prodTypeApi := e.Group("/api/v1/product-type")
+	uomApi := e.Group("/api/v1/uom")
 
 	api.POST("", echo.WrapHandler(httpProxy))
 	api.GET("/:id", echo.WrapHandler(httpProxy))
@@ -44,8 +47,13 @@ func (r *Rest) registerStoreService(e *echo.Echo) {
 	doc.GET("", echo.WrapHandler(httpProxy))
 	doc.GET("/openapi.yaml", echo.WrapHandler(httpProxy))
 
+	prodApi.GET("/:product_id", echo.WrapHandler(httpProxy))
+	e.POST("/api/v1/product-list", echo.WrapHandler(httpProxy))
 	prodApi.POST("", echo.WrapHandler(httpProxy))
-	e.POST("/api/v1/product-category", echo.WrapHandler(httpProxy))
-	e.POST("/api/v1/product-type", echo.WrapHandler(httpProxy))
-	e.POST("/api/v1/uom", echo.WrapHandler(httpProxy))
+	prodCatApi.GET("/:is_include_deactivated", echo.WrapHandler(httpProxy))
+	prodCatApi.POST("", echo.WrapHandler(httpProxy))
+	prodTypeApi.GET("/:is_include_deactivated", echo.WrapHandler(httpProxy))
+	prodTypeApi.POST("", echo.WrapHandler(httpProxy))
+	uomApi.GET("/:is_include_deactivated", echo.WrapHandler(httpProxy))
+	uomApi.POST("", echo.WrapHandler(httpProxy))
 }
