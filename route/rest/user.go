@@ -6,7 +6,6 @@ import (
 	"net/url"
 	"os"
 
-	"github.com/Mitra-Apps/be-api-gateway/auth"
 	pb "github.com/Mitra-Apps/be-user-service/domain/proto/user"
 
 	"github.com/labstack/echo/v4"
@@ -28,27 +27,6 @@ func (r *Rest) getUsers(e echo.Context) error {
 	return e.JSON(http.StatusOK, userList)
 }
 
-func (r *Rest) login(e echo.Context) error {
-	u := new(pb.UserLoginRequest)
-	if err := e.Bind(u); err != nil {
-		echo.NewHTTPError(http.StatusBadRequest, err)
-	}
-	ctx := e.Request().Context()
-	user, err := r.userService.Login(ctx, u)
-	if err != nil {
-		return convertGrpcToHttpErrorResponse(err)
-	}
-	jwt, err := auth.GenerateToken(ctx, user.User.Username)
-	if err != nil {
-		echo.NewHTTPError(http.StatusInternalServerError, err)
-	}
-	response := map[string]interface{}{
-		"jwt": jwt,
-	}
-
-	return e.JSON(http.StatusOK, response)
-}
-
 func (r *Rest) registerUserService(e *echo.Group) {
 	httpProxy := httputil.NewSingleHostReverseProxy(&url.URL{
 		Scheme: "http",
@@ -60,4 +38,6 @@ func (r *Rest) registerUserService(e *echo.Group) {
 	e.GET("/getrole", echo.WrapHandler(httpProxy))
 	e.POST("/register", echo.WrapHandler(httpProxy))
 	e.POST("/createrole", echo.WrapHandler(httpProxy))
+	e.POST("/verify-token", echo.WrapHandler(httpProxy))
+	e.POST("/resend-otp", echo.WrapHandler(httpProxy))
 }

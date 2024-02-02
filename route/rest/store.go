@@ -5,7 +5,6 @@ import (
 	"net/url"
 	"os"
 
-	"github.com/Mitra-Apps/be-api-gateway/auth"
 	"github.com/labstack/echo/v4"
 )
 
@@ -25,14 +24,36 @@ import (
 // 	return e.JSON(http.StatusOK, StoreList)
 // }
 
-func (r *Rest) registerStoreService(e *echo.Group) {
+func (r *Rest) registerStoreService(e *echo.Echo) {
 	httpProxy := httputil.NewSingleHostReverseProxy(&url.URL{
 		Scheme: "http",
 		Host:   os.Getenv("HTTP_STORE_HOST"),
 	})
 
-	e.POST("", echo.WrapHandler(httpProxy))
-	e.GET("/:id", echo.WrapHandler(httpProxy))
-	e.GET("", echo.WrapHandler(httpProxy))
-	e.PUT("/active-toggle/:is_active", echo.WrapHandler(httpProxy), auth.Required())
+	api := e.Group("/api/v1/stores")
+	doc := e.Group("/docs/v1/stores")
+
+	prodApi := e.Group("/api/v1/products")
+	prodCatApi := e.Group("/api/v1/product-category")
+	prodTypeApi := e.Group("/api/v1/product-type")
+	uomApi := e.Group("/api/v1/uom")
+
+	api.POST("", echo.WrapHandler(httpProxy))
+	api.GET("/:id", echo.WrapHandler(httpProxy))
+	api.GET("", echo.WrapHandler(httpProxy))
+	api.PUT("/active-toggle/:is_active", echo.WrapHandler(httpProxy))
+	api.PUT("/:id", echo.WrapHandler(httpProxy))
+
+	doc.GET("", echo.WrapHandler(httpProxy))
+	doc.GET("/openapi.yaml", echo.WrapHandler(httpProxy))
+
+	prodApi.GET("/:product_id", echo.WrapHandler(httpProxy))
+	e.POST("/api/v1/product-list", echo.WrapHandler(httpProxy))
+	prodApi.POST("", echo.WrapHandler(httpProxy))
+	prodCatApi.GET("/:is_include_deactivated", echo.WrapHandler(httpProxy))
+	prodCatApi.POST("", echo.WrapHandler(httpProxy))
+	prodTypeApi.GET("/:is_include_deactivated", echo.WrapHandler(httpProxy))
+	prodTypeApi.POST("", echo.WrapHandler(httpProxy))
+	uomApi.GET("/:is_include_deactivated", echo.WrapHandler(httpProxy))
+	uomApi.POST("", echo.WrapHandler(httpProxy))
 }
