@@ -48,7 +48,7 @@ func (r *Rest) registerStoreService(e *echo.Echo) {
 	doc.GET("/openapi.yaml", echo.WrapHandler(httpProxy))
 
 	prodApi.GET("/:product_id", echo.WrapHandler(httpProxy))
-	e.POST("/api/v1/product-list", echo.WrapHandler(httpProxy))
+	e.GET("/api/v1/product-list/:store_id/:is_include_deactivated", echo.WrapHandler(httpProxy))
 	prodApi.POST("", echo.WrapHandler(httpProxy))
 	prodCatApi.GET("/:is_include_deactivated", echo.WrapHandler(httpProxy))
 	prodCatApi.POST("", echo.WrapHandler(httpProxy))
