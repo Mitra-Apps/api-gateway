@@ -3,7 +3,7 @@ module github.com/Mitra-Apps/be-api-gateway
 go 1.21.3
 
 require (
-	github.com/Mitra-Apps/be-store-service v0.0.0-20240207091340-940249c8cde5
+	github.com/Mitra-Apps/be-store-service v0.0.0-20240209043458-acfe3c16326c
 	github.com/Mitra-Apps/be-user-service v0.0.0-20240131011829-ec44bdb9499e
 	github.com/golang-jwt/jwt/v5 v5.2.0
 	github.com/joho/godotenv v1.5.1
@@ -67,12 +67,12 @@ require (
 	go.elastic.co/apm/module/apmgrpc v1.15.0 // indirect
 	go.elastic.co/apm/module/apmhttp v1.15.0 // indirect
 	go.elastic.co/fastjson v1.3.0 // indirect
-	golang.org/x/crypto v0.18.0 // indirect
+	golang.org/x/crypto v0.19.0 // indirect
 	golang.org/x/lint v0.0.0-20210508222113-6edffad5e616 // indirect
 	golang.org/x/mod v0.15.0 // indirect
-	golang.org/x/net v0.20.0 // indirect
+	golang.org/x/net v0.21.0 // indirect
 	golang.org/x/sync v0.6.0 // indirect
-	golang.org/x/sys v0.16.0 // indirect
+	golang.org/x/sys v0.17.0 // indirect
 	golang.org/x/text v0.14.0 // indirect
 	golang.org/x/time v0.5.0 // indirect
 	golang.org/x/tools v0.17.0 // indirect
