@@ -40,6 +40,7 @@ func (r *Rest) registerStoreService(e *echo.Echo) {
 
 	api.POST("", echo.WrapHandler(httpProxy))
 	api.GET("/:id", echo.WrapHandler(httpProxy))
+	api.GET("/my-store", echo.WrapHandler(httpProxy))
 	api.GET("", echo.WrapHandler(httpProxy))
 	api.PUT("/active-toggle/:is_active", echo.WrapHandler(httpProxy))
 	api.PUT("/:id", echo.WrapHandler(httpProxy))
