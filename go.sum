@@ -14,6 +14,8 @@ github.com/Mitra-Apps/be-store-service v0.0.0-20240209043458-acfe3c16326c h1:XjY
 github.com/Mitra-Apps/be-store-service v0.0.0-20240209043458-acfe3c16326c/go.mod h1:B6QePrUEDVXNyncJEunIHztdBDGMUyQiJKofTVaxHLI=
 github.com/Mitra-Apps/be-store-service v0.0.0-20240216071523-9290d97e5dc0 h1:3nDzU2U4ny7Cu38S9Qx33BKPav3jspVdxTomyRgo8+E=
 github.com/Mitra-Apps/be-store-service v0.0.0-20240216071523-9290d97e5dc0/go.mod h1:B6QePrUEDVXNyncJEunIHztdBDGMUyQiJKofTVaxHLI=
+github.com/Mitra-Apps/be-store-service v0.0.0-20240219073656-411aa6d7255b h1:nCFyDZtA7HzcgDOtve35Kx+ZxYWOe9QqY4RsdkVx8UA=
+github.com/Mitra-Apps/be-store-service v0.0.0-20240219073656-411aa6d7255b/go.mod h1:B6QePrUEDVXNyncJEunIHztdBDGMUyQiJKofTVaxHLI=
 github.com/Mitra-Apps/be-user-service v0.0.0-20240131011829-ec44bdb9499e h1:VjtkeVSQWKrevQtn8bSl+XR4D82QI0hhBilLN+DPaYI=
 github.com/Mitra-Apps/be-user-service v0.0.0-20240131011829-ec44bdb9499e/go.mod h1:EAZWiXEl0wY5zxsUdBOdfBJxjdZcfo6984VtMzQO2nQ=
 github.com/armon/go-radix v1.0.0 h1:F4z6KzEeeQIMeLFa97iZU6vupzoecKdU5TX24SNppXI=

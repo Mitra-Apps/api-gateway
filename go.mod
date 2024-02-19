@@ -3,7 +3,7 @@ module github.com/Mitra-Apps/be-api-gateway
 go 1.21.3
 
 require (
-	github.com/Mitra-Apps/be-store-service v0.0.0-20240216071523-9290d97e5dc0
+	github.com/Mitra-Apps/be-store-service v0.0.0-20240219073656-411aa6d7255b
 	github.com/Mitra-Apps/be-user-service v0.0.0-20240131011829-ec44bdb9499e
 	github.com/golang-jwt/jwt/v5 v5.2.0
 	github.com/joho/godotenv v1.5.1
