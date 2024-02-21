@@ -1,20 +1,14 @@
 package main
 
 import (
-	"flag"
-	"log"
 	"net/http"
 
 	"github.com/Mitra-Apps/be-api-gateway/lib"
 	"github.com/Mitra-Apps/be-api-gateway/route/rest"
-	storePb "github.com/Mitra-Apps/be-store-service/domain/proto/store"
-	userPb "github.com/Mitra-Apps/be-user-service/domain/proto/user"
 	"github.com/joho/godotenv"
 
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/insecure"
 
 	echoSwagger "github.com/swaggo/echo-swagger"
 
@@ -47,26 +41,7 @@ func main() {
 		AllowMethods: []string{http.MethodGet, http.MethodOptions, http.MethodPost, http.MethodDelete, http.MethodPut},
 	}))
 
-	userGrpcAddr := flag.String("userGrpcAddr", lib.GetEnv("GRPC_USER_HOST"), "User service host")
-	storeGrpcAddr := flag.String("storeGrpcAddr", lib.GetEnv("GRPC_STORE_HOST"), "Store service host")
-
-	userGrpcConn, err := grpc.Dial(*userGrpcAddr, grpc.WithTransportCredentials(insecure.NewCredentials()))
-	if err != nil {
-		log.Fatal("Cannot connect to user grpc server ", err)
-	}
-	storeGrpcConn, err := grpc.Dial(*storeGrpcAddr, grpc.WithTransportCredentials(insecure.NewCredentials()))
-	if err != nil {
-		log.Fatal("Cannot connect to store grpc server ", err)
-	}
-	defer func() {
-		log.Println("Closing connection ...")
-		storeGrpcConn.Close()
-		userGrpcConn.Close()
-	}()
-
-	userGrpcServiceClient := userPb.NewUserServiceClient(userGrpcConn)
-	storeGrpcServiceClient := storePb.NewStoreServiceClient(storeGrpcConn)
-	rest.New(userGrpcServiceClient, storeGrpcServiceClient).Register(e)
+	rest.New().Register(e)
 
 	// Health check
 	e.GET("/", HealthCheck)
