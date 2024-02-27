@@ -15,8 +15,7 @@ func New() *Rest {
 func (r *Rest) Register(e *echo.Echo) {
 	e.GET("/ping", r.ping)
 
-	user := e.Group("/api/v1/users")
-	r.registerUserService(user)
+	r.registerUserService(e)
 
 	r.registerStoreService(e)
 }
