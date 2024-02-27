@@ -11,9 +11,9 @@ require (
 
 require (
 	github.com/KyleBanks/depth v1.2.1 // indirect
-	github.com/Mitra-Apps/be-store-service v0.0.0-20240223032711-54fb2ca17ee1 // indirect
-	github.com/Mitra-Apps/be-user-service v0.0.0-20240222034618-c7afc989483a // indirect
-	github.com/Mitra-Apps/be-utility-service v0.0.0-20240222081525-7de9c96d8c26 // indirect
+	github.com/Mitra-Apps/be-store-service v0.0.0-20240227043107-8793cb33658b // indirect
+	github.com/Mitra-Apps/be-user-service v0.0.0-20240226081518-187be354815c // indirect
+	github.com/Mitra-Apps/be-utility-service v0.0.0-20240223095849-aa433a55947b // indirect
 	github.com/armon/go-radix v1.0.0 // indirect
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
 	github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f // indirect
@@ -71,7 +71,7 @@ require (
 	go.elastic.co/apm/module/apmgrpc v1.15.0 // indirect
 	go.elastic.co/apm/module/apmhttp v1.15.0 // indirect
 	go.elastic.co/fastjson v1.3.0 // indirect
-	golang.org/x/crypto v0.19.0 // indirect
+	golang.org/x/crypto v0.20.0 // indirect
 	golang.org/x/lint v0.0.0-20210508222113-6edffad5e616 // indirect
 	golang.org/x/mod v0.15.0 // indirect
 	golang.org/x/net v0.21.0 // indirect

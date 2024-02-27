@@ -4,12 +4,18 @@ github.com/KyleBanks/depth v1.2.1 h1:5h8fQADFrWtarTdtDudMmGsC7GPbOAu6RVB3ffsVFHc
 github.com/KyleBanks/depth v1.2.1/go.mod h1:jzSb9d0L43HxTQfT+oSA1EEp2q+ne2uh6XgeJcm8brE=
 github.com/Mitra-Apps/be-store-service v0.0.0-20240223032711-54fb2ca17ee1 h1:YHVLAC3tFVDteupqKrvqLpjoymGBEbdNi7r7b89JATA=
 github.com/Mitra-Apps/be-store-service v0.0.0-20240223032711-54fb2ca17ee1/go.mod h1:qucXd40YEFL6eMNjqthPMVhdh5iBNQObfz3O/j2uPdE=
+github.com/Mitra-Apps/be-store-service v0.0.0-20240227043107-8793cb33658b h1:RZRwP47JVdcQKRBCaz/ZNcj0fZmXn43NlbEmZtG7Wso=
+github.com/Mitra-Apps/be-store-service v0.0.0-20240227043107-8793cb33658b/go.mod h1:OpDa1ANt73MAExBClINe0gxxTzbI7imJLl70bf5akIc=
 github.com/Mitra-Apps/be-user-service v0.0.0-20240130120004-24516988ac2e h1:6iRISbEpC1sl7JzV6kr7VagedBhsKSEMy0RK65q6soE=
 github.com/Mitra-Apps/be-user-service v0.0.0-20240130120004-24516988ac2e/go.mod h1:R1dVMBvuO1tdpcgHSvcY8jTrRDDd+bXbYm7JFWO+UA0=
 github.com/Mitra-Apps/be-user-service v0.0.0-20240222034618-c7afc989483a h1:TMx3VVXKrOxjnCvGETGDuFsbZViCAILMEUTB0S1aozE=
 github.com/Mitra-Apps/be-user-service v0.0.0-20240222034618-c7afc989483a/go.mod h1:PcINEQ8He+zsEl5TQz223NXKYIskYMNxm1w/jeGLqI0=
+github.com/Mitra-Apps/be-user-service v0.0.0-20240226081518-187be354815c h1:txxDbqskQLj9ES7Q9rOTmsUUEHW/qgIDAejr7/cx5u4=
+github.com/Mitra-Apps/be-user-service v0.0.0-20240226081518-187be354815c/go.mod h1:R1dVMBvuO1tdpcgHSvcY8jTrRDDd+bXbYm7JFWO+UA0=
 github.com/Mitra-Apps/be-utility-service v0.0.0-20240222081525-7de9c96d8c26 h1:EiBHjhPNZZIHJRya8bb1ejLWARUSwjnOm4TcU0Gmh3k=
 github.com/Mitra-Apps/be-utility-service v0.0.0-20240222081525-7de9c96d8c26/go.mod h1:50fp/eP68YdR958qdTqRZ3t4ZTQMVt2fftppUuTGb5k=
+github.com/Mitra-Apps/be-utility-service v0.0.0-20240223095849-aa433a55947b h1:lg3/Jvan+UJtkRQQnCso/QvZtgdm6UPemPXvaYx4bno=
+github.com/Mitra-Apps/be-utility-service v0.0.0-20240223095849-aa433a55947b/go.mod h1:uiydEdCAFtshjSJIGOSgcZ2FypUEyLtNq8rQpo0e6A0=
 github.com/armon/go-radix v1.0.0 h1:F4z6KzEeeQIMeLFa97iZU6vupzoecKdU5TX24SNppXI=
 github.com/armon/go-radix v1.0.0/go.mod h1:ufUuZ+zHj4x4TnLV4JWEpy2hxWSpsRywHrMgIH9cCH8=
 github.com/benbjohnson/clock v1.1.0/go.mod h1:J11/hYXuz8f4ySSvYwY0FKfm+ezbsZBKZxNJlLklBHA=
@@ -229,6 +235,8 @@ golang.org/x/crypto v0.0.0-20191011191535-87dc89f01550/go.mod h1:yigFU9vqHzYiE8U
 golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9/go.mod h1:LzIPMQfyMNhhGPhUkYOs5KpL4U8rLKemX1yGLhDgUto=
 golang.org/x/crypto v0.19.0 h1:ENy+Az/9Y1vSrlrvBSyna3PITt4tiZLf7sgCjZBX7Wo=
 golang.org/x/crypto v0.19.0/go.mod h1:Iy9bg/ha4yyC70EfRS8jz+B6ybOBKMaSxLj6P6oBDfU=
+golang.org/x/crypto v0.20.0 h1:jmAMJJZXr5KiCw05dfYK9QnqaqKLYXijU23lsEdcQqg=
+golang.org/x/crypto v0.20.0/go.mod h1:Xwo95rrVNIoSMx9wa1JroENMToLWn3RNVrTBpLHgZPQ=
 golang.org/x/exp v0.0.0-20190121172915-509febef88a4/go.mod h1:CJ0aWSM057203Lf6IL+f9T1iT9GByDxfZKAQTCR3kQA=
 golang.org/x/lint v0.0.0-20181026193005-c67002cb31c3/go.mod h1:UVdnD1Gm6xHRNCYTkRU2/jEulfH38KcIWyp/GAMgvoE=
 golang.org/x/lint v0.0.0-20190227174305-5b3e6a55c961/go.mod h1:wehouNa3lNwaWXcvxsM5YxQ5yQlVC4a0KAMCusXpPoU=
