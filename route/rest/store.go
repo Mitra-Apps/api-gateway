@@ -58,4 +58,5 @@ func (r *Rest) registerStoreService(e *echo.Echo) {
 	prodTypeApi.POST("", echo.WrapHandler(httpProxy))
 	uomApi.GET("/:is_include_deactivated", echo.WrapHandler(httpProxy))
 	uomApi.POST("", echo.WrapHandler(httpProxy))
+	uomApi.PUT("/:uom_id", echo.WrapHandler(httpProxy))
 }
