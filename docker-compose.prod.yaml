@@ -1,7 +1,7 @@
 version: "3.0"
 services:
   prod-api-gateway:
-    image: ${ECR_REGISTRY}/${IMAGE_NAME}:${COMMIT_HASH}
+    image: ${ECR_REGISTRY}/${IMAGE_NAME}:${TAG}
     ports:
       - 9000:9000
     environment:
@@ -9,6 +9,7 @@ services:
       - GRPC_USER_HOST=prod-user-service:9100
       - HTTP_USER_HOST=prod-user-service:9101
       - GRPC_STORE_HOST=prod-store-service:9200
+      - HTTP_STORE_HOST=stag-store-service:9201
       - JWT_SECRET=secret
       - JWT_EXPIRED_TIME=6h
     networks:
