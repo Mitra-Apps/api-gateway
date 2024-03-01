@@ -54,6 +54,7 @@ func (r *Rest) registerStoreService(e *echo.Echo) {
 	prodApi.POST("", echo.WrapHandler(httpProxy))
 	prodCatApi.GET("/:is_include_deactivated", echo.WrapHandler(httpProxy))
 	prodCatApi.POST("", echo.WrapHandler(httpProxy))
+	prodCatApi.PUT("/:id", echo.WrapHandler(httpProxy))
 	prodTypeApi.GET("/:is_include_deactivated", echo.WrapHandler(httpProxy))
 	prodTypeApi.POST("", echo.WrapHandler(httpProxy))
 	uomApi.GET("/:is_include_deactivated", echo.WrapHandler(httpProxy))
