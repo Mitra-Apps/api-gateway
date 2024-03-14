@@ -12,7 +12,7 @@ require (
 require (
 	filippo.io/edwards25519 v1.1.0 // indirect
 	github.com/KyleBanks/depth v1.2.1 // indirect
-	github.com/Mitra-Apps/be-store-service v0.0.0-20240313072726-585d25a541b0 // indirect
+	github.com/Mitra-Apps/be-store-service v0.0.0-20240314032854-2b7cea947149 // indirect
 	github.com/Mitra-Apps/be-user-service v0.0.0-20240304101816-e90a810ad690 // indirect
 	github.com/Mitra-Apps/be-utility-service v0.0.0-20240306062840-a43f4321248b // indirect
 	github.com/armon/go-radix v1.0.0 // indirect

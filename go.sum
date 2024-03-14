@@ -8,6 +8,8 @@ github.com/Mitra-Apps/be-store-service v0.0.0-20240229022041-5a55cfa4743e h1:o9y
 github.com/Mitra-Apps/be-store-service v0.0.0-20240229022041-5a55cfa4743e/go.mod h1:OpDa1ANt73MAExBClINe0gxxTzbI7imJLl70bf5akIc=
 github.com/Mitra-Apps/be-store-service v0.0.0-20240313072726-585d25a541b0 h1:I/tKs5VO30dqiXpe3ky4z28heRUiV1Moea3dILD8vBo=
 github.com/Mitra-Apps/be-store-service v0.0.0-20240313072726-585d25a541b0/go.mod h1:c9cxEw98bBUfkhb86IZ+0iRfv4XfOnjRVpgdt9OPpJ4=
+github.com/Mitra-Apps/be-store-service v0.0.0-20240314032854-2b7cea947149 h1:cMILwb88B+mO5gN3uIswePa7BQdoiWncyq4t4ONdcnM=
+github.com/Mitra-Apps/be-store-service v0.0.0-20240314032854-2b7cea947149/go.mod h1:c9cxEw98bBUfkhb86IZ+0iRfv4XfOnjRVpgdt9OPpJ4=
 github.com/Mitra-Apps/be-user-service v0.0.0-20240226081518-187be354815c h1:txxDbqskQLj9ES7Q9rOTmsUUEHW/qgIDAejr7/cx5u4=
 github.com/Mitra-Apps/be-user-service v0.0.0-20240226081518-187be354815c/go.mod h1:R1dVMBvuO1tdpcgHSvcY8jTrRDDd+bXbYm7JFWO+UA0=
 github.com/Mitra-Apps/be-user-service v0.0.0-20240304101816-e90a810ad690 h1:dFplnXuXXVSeXU7a/yaArqAuRRlcdhsJ/mlK22vEF44=
