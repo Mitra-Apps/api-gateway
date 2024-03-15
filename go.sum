@@ -12,6 +12,8 @@ github.com/Mitra-Apps/be-store-service v0.0.0-20240314032854-2b7cea947149 h1:cMI
 github.com/Mitra-Apps/be-store-service v0.0.0-20240314032854-2b7cea947149/go.mod h1:c9cxEw98bBUfkhb86IZ+0iRfv4XfOnjRVpgdt9OPpJ4=
 github.com/Mitra-Apps/be-store-service v0.0.0-20240315035311-3991935544fc h1:PQoziAplKaicXKb5g7Qv+jqQKa8X7V0QKmbUJuLSEAs=
 github.com/Mitra-Apps/be-store-service v0.0.0-20240315035311-3991935544fc/go.mod h1:+sNkrRUcozo+hfLZz4qmvNaPiNPOA5U1t4XQx9vK+/s=
+github.com/Mitra-Apps/be-store-service v0.0.0-20240315074137-8fd32213f580 h1:PgV2NMs9oK9DvpyN1ojbZpHrZglWEoFwquf2ohg4GPk=
+github.com/Mitra-Apps/be-store-service v0.0.0-20240315074137-8fd32213f580/go.mod h1:EgmXA7jRCqfF28TVemFWJzvnls/+0NRtYr1BrDED2SA=
 github.com/Mitra-Apps/be-user-service v0.0.0-20240226081518-187be354815c h1:txxDbqskQLj9ES7Q9rOTmsUUEHW/qgIDAejr7/cx5u4=
 github.com/Mitra-Apps/be-user-service v0.0.0-20240226081518-187be354815c/go.mod h1:R1dVMBvuO1tdpcgHSvcY8jTrRDDd+bXbYm7JFWO+UA0=
 github.com/Mitra-Apps/be-user-service v0.0.0-20240304101816-e90a810ad690 h1:dFplnXuXXVSeXU7a/yaArqAuRRlcdhsJ/mlK22vEF44=
@@ -20,6 +22,8 @@ github.com/Mitra-Apps/be-utility-service v0.0.0-20240228043817-402c281e7743 h1:4
 github.com/Mitra-Apps/be-utility-service v0.0.0-20240228043817-402c281e7743/go.mod h1:X7HE9LcKlH0WCaDHkQegZpXa89iw9v6scsVBeimfhfw=
 github.com/Mitra-Apps/be-utility-service v0.0.0-20240306062840-a43f4321248b h1:q8ovOuV9pN2pU/qHDbO054Ads+FPrDuY9SVLXvI69Go=
 github.com/Mitra-Apps/be-utility-service v0.0.0-20240306062840-a43f4321248b/go.mod h1:nnJySAZ2TBxl7SsTftFOb0M3nfQSQGL1x9ruvs4p98M=
+github.com/Mitra-Apps/be-utility-service v0.0.0-20240315073722-9701dc8f90cb h1:B842L+3ohJL4KL3bo6uOzjV68M9uAle8XLAkOhBImOQ=
+github.com/Mitra-Apps/be-utility-service v0.0.0-20240315073722-9701dc8f90cb/go.mod h1:nnJySAZ2TBxl7SsTftFOb0M3nfQSQGL1x9ruvs4p98M=
 github.com/armon/go-radix v1.0.0 h1:F4z6KzEeeQIMeLFa97iZU6vupzoecKdU5TX24SNppXI=
 github.com/armon/go-radix v1.0.0/go.mod h1:ufUuZ+zHj4x4TnLV4JWEpy2hxWSpsRywHrMgIH9cCH8=
 github.com/benbjohnson/clock v1.1.0/go.mod h1:J11/hYXuz8f4ySSvYwY0FKfm+ezbsZBKZxNJlLklBHA=
