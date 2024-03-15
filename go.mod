@@ -12,7 +12,7 @@ require (
 require (
 	filippo.io/edwards25519 v1.1.0 // indirect
 	github.com/KyleBanks/depth v1.2.1 // indirect
-	github.com/Mitra-Apps/be-store-service v0.0.0-20240314032854-2b7cea947149 // indirect
+	github.com/Mitra-Apps/be-store-service v0.0.0-20240315035311-3991935544fc // indirect
 	github.com/Mitra-Apps/be-user-service v0.0.0-20240304101816-e90a810ad690 // indirect
 	github.com/Mitra-Apps/be-utility-service v0.0.0-20240306062840-a43f4321248b // indirect
 	github.com/armon/go-radix v1.0.0 // indirect
@@ -82,8 +82,8 @@ require (
 	golang.org/x/time v0.5.0 // indirect
 	golang.org/x/tools v0.19.0 // indirect
 	google.golang.org/genproto v0.0.0-20240311173647-c811ad7063a7 // indirect
-	google.golang.org/genproto/googleapis/api v0.0.0-20240311173647-c811ad7063a7 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20240311173647-c811ad7063a7 // indirect
+	google.golang.org/genproto/googleapis/api v0.0.0-20240314234333-6e1732d8331c // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20240314234333-6e1732d8331c // indirect
 	google.golang.org/grpc v1.62.1 // indirect
 	google.golang.org/protobuf v1.33.0 // indirect
 	gopkg.in/alexcesaro/quotedprintable.v3 v3.0.0-20150716171945-2caba252f4dc // indirect
