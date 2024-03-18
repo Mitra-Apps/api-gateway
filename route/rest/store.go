@@ -40,6 +40,7 @@ func (r *Rest) registerStoreService(e *echo.Echo) {
 
 	api.POST("", echo.WrapHandler(httpProxy))
 	api.GET("/:id", echo.WrapHandler(httpProxy))
+	api.GET("/my-store", echo.WrapHandler(httpProxy))
 	api.GET("", echo.WrapHandler(httpProxy))
 	api.PUT("/active-toggle/:is_active", echo.WrapHandler(httpProxy))
 	api.PUT("/:id", echo.WrapHandler(httpProxy))
@@ -48,7 +49,7 @@ func (r *Rest) registerStoreService(e *echo.Echo) {
 	doc.GET("/openapi.yaml", echo.WrapHandler(httpProxy))
 
 	prodApi.GET("/:product_id", echo.WrapHandler(httpProxy))
-	e.POST("/api/v1/product-list", echo.WrapHandler(httpProxy))
+	e.GET("/api/v1/product-list/:store_id/:is_include_deactivated", echo.WrapHandler(httpProxy))
 	prodApi.POST("", echo.WrapHandler(httpProxy))
 	prodCatApi.GET("/:is_include_deactivated", echo.WrapHandler(httpProxy))
 	prodCatApi.POST("", echo.WrapHandler(httpProxy))
