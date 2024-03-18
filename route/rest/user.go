@@ -22,6 +22,7 @@ func (r *Rest) registerUserService(e *echo.Echo) {
 	// user group api
 	user.GET("", echo.WrapHandler(httpProxy))
 	user.POST("/login", echo.WrapHandler(httpProxy))
+	user.POST("/logout", echo.WrapHandler(httpProxy))
 	user.GET("/getrole", echo.WrapHandler(httpProxy))
 	user.POST("/register", echo.WrapHandler(httpProxy))
 	user.POST("/createrole", echo.WrapHandler(httpProxy))
