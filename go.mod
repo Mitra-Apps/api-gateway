@@ -12,9 +12,9 @@ require (
 require (
 	filippo.io/edwards25519 v1.1.0 // indirect
 	github.com/KyleBanks/depth v1.2.1 // indirect
-	github.com/Mitra-Apps/be-store-service v0.0.0-20240318015500-aa3b8bf4460d // indirect
+	github.com/Mitra-Apps/be-store-service v0.0.0-20240319090356-01ef9a8d4c0d // indirect
 	github.com/Mitra-Apps/be-user-service v0.0.0-20240304101816-e90a810ad690 // indirect
-	github.com/Mitra-Apps/be-utility-service v0.0.0-20240315073722-9701dc8f90cb // indirect
+	github.com/Mitra-Apps/be-utility-service v0.0.0-20240319082141-b4c292235e6f // indirect
 	github.com/armon/go-radix v1.0.0 // indirect
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
 	github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f // indirect
@@ -82,8 +82,8 @@ require (
 	golang.org/x/time v0.5.0 // indirect
 	golang.org/x/tools v0.19.0 // indirect
 	google.golang.org/genproto v0.0.0-20240311173647-c811ad7063a7 // indirect
-	google.golang.org/genproto/googleapis/api v0.0.0-20240314234333-6e1732d8331c // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20240314234333-6e1732d8331c // indirect
+	google.golang.org/genproto/googleapis/api v0.0.0-20240318140521-94a12d6c2237 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20240318140521-94a12d6c2237 // indirect
 	google.golang.org/grpc v1.62.1 // indirect
 	google.golang.org/protobuf v1.33.0 // indirect
 	gopkg.in/alexcesaro/quotedprintable.v3 v3.0.0-20150716171945-2caba252f4dc // indirect
@@ -91,8 +91,8 @@ require (
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	gorm.io/datatypes v1.2.0 // indirect
-	gorm.io/driver/mysql v1.5.4 // indirect
+	gorm.io/driver/mysql v1.5.5 // indirect
 	gorm.io/driver/postgres v1.5.7 // indirect
-	gorm.io/gorm v1.25.7 // indirect
+	gorm.io/gorm v1.25.8 // indirect
 	howett.net/plist v1.0.1 // indirect
 )
