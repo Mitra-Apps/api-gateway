@@ -18,6 +18,8 @@ github.com/Mitra-Apps/be-store-service v0.0.0-20240318015500-aa3b8bf4460d h1:TyP
 github.com/Mitra-Apps/be-store-service v0.0.0-20240318015500-aa3b8bf4460d/go.mod h1:EgmXA7jRCqfF28TVemFWJzvnls/+0NRtYr1BrDED2SA=
 github.com/Mitra-Apps/be-store-service v0.0.0-20240319090356-01ef9a8d4c0d h1:GJUVJ1YbnNr5NzmirHY6NnHifpKftr3fegj56ML0lg0=
 github.com/Mitra-Apps/be-store-service v0.0.0-20240319090356-01ef9a8d4c0d/go.mod h1:EgmXA7jRCqfF28TVemFWJzvnls/+0NRtYr1BrDED2SA=
+github.com/Mitra-Apps/be-store-service v0.0.0-20240325072324-615b97597089 h1:mbKv/Lgx+7uZPQwrHVKs+3Hxd9ISzzkvomWQ/2x/yC0=
+github.com/Mitra-Apps/be-store-service v0.0.0-20240325072324-615b97597089/go.mod h1:EgmXA7jRCqfF28TVemFWJzvnls/+0NRtYr1BrDED2SA=
 github.com/Mitra-Apps/be-user-service v0.0.0-20240226081518-187be354815c h1:txxDbqskQLj9ES7Q9rOTmsUUEHW/qgIDAejr7/cx5u4=
 github.com/Mitra-Apps/be-user-service v0.0.0-20240226081518-187be354815c/go.mod h1:R1dVMBvuO1tdpcgHSvcY8jTrRDDd+bXbYm7JFWO+UA0=
 github.com/Mitra-Apps/be-user-service v0.0.0-20240304101816-e90a810ad690 h1:dFplnXuXXVSeXU7a/yaArqAuRRlcdhsJ/mlK22vEF44=
@@ -420,6 +422,8 @@ gorm.io/driver/mysql v1.5.4 h1:igQmHfKcbaTVyAIHNhhB888vvxh8EdQ2uSUT0LPcBso=
 gorm.io/driver/mysql v1.5.4/go.mod h1:9rYxJph/u9SWkWc9yY4XJ1F/+xO0S/ChOmbk3+Z5Tvs=
 gorm.io/driver/mysql v1.5.5 h1:WxklwX6FozMs1gk9yVadxGfjGiJjrBKPvIIvYZOMyws=
 gorm.io/driver/mysql v1.5.5/go.mod h1:sEtPWMiqiN1N1cMXoXmBbd8C6/l+TESwriotuRRpkDM=
+gorm.io/driver/mysql v1.5.6 h1:Ld4mkIickM+EliaQZQx3uOJDJHtrd70MxAUqWqlx3Y8=
+gorm.io/driver/mysql v1.5.6/go.mod h1:sEtPWMiqiN1N1cMXoXmBbd8C6/l+TESwriotuRRpkDM=
 gorm.io/driver/postgres v1.5.6 h1:ydr9xEd5YAM0vxVDY0X139dyzNz10spDiDlC7+ibLeU=
 gorm.io/driver/postgres v1.5.6/go.mod h1:3e019WlBaYI5o5LIdNV+LyxCMNtLOQETBXL2h4chKpA=
 gorm.io/driver/postgres v1.5.7 h1:8ptbNJTDbEmhdr62uReG5BGkdQyeasu/FZHxI0IMGnM=
