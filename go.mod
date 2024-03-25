@@ -12,7 +12,7 @@ require (
 require (
 	filippo.io/edwards25519 v1.1.0 // indirect
 	github.com/KyleBanks/depth v1.2.1 // indirect
-	github.com/Mitra-Apps/be-store-service v0.0.0-20240319090356-01ef9a8d4c0d // indirect
+	github.com/Mitra-Apps/be-store-service v0.0.0-20240325072324-615b97597089 // indirect
 	github.com/Mitra-Apps/be-user-service v0.0.0-20240304101816-e90a810ad690 // indirect
 	github.com/Mitra-Apps/be-utility-service v0.0.0-20240319082141-b4c292235e6f // indirect
 	github.com/armon/go-radix v1.0.0 // indirect
@@ -91,7 +91,7 @@ require (
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	gorm.io/datatypes v1.2.0 // indirect
-	gorm.io/driver/mysql v1.5.5 // indirect
+	gorm.io/driver/mysql v1.5.6 // indirect
 	gorm.io/driver/postgres v1.5.7 // indirect
 	gorm.io/gorm v1.25.8 // indirect
 	howett.net/plist v1.0.1 // indirect
