@@ -20,6 +20,8 @@ github.com/Mitra-Apps/be-store-service v0.0.0-20240319090356-01ef9a8d4c0d h1:GJU
 github.com/Mitra-Apps/be-store-service v0.0.0-20240319090356-01ef9a8d4c0d/go.mod h1:EgmXA7jRCqfF28TVemFWJzvnls/+0NRtYr1BrDED2SA=
 github.com/Mitra-Apps/be-store-service v0.0.0-20240325072324-615b97597089 h1:mbKv/Lgx+7uZPQwrHVKs+3Hxd9ISzzkvomWQ/2x/yC0=
 github.com/Mitra-Apps/be-store-service v0.0.0-20240325072324-615b97597089/go.mod h1:EgmXA7jRCqfF28TVemFWJzvnls/+0NRtYr1BrDED2SA=
+github.com/Mitra-Apps/be-store-service v0.0.0-20240326014317-78ba358719ed h1:xoz3/1r9d/rmSj7Dk0rOhMIHKbA4+iYwNnrHlSDPyFU=
+github.com/Mitra-Apps/be-store-service v0.0.0-20240326014317-78ba358719ed/go.mod h1:EgmXA7jRCqfF28TVemFWJzvnls/+0NRtYr1BrDED2SA=
 github.com/Mitra-Apps/be-user-service v0.0.0-20240226081518-187be354815c h1:txxDbqskQLj9ES7Q9rOTmsUUEHW/qgIDAejr7/cx5u4=
 github.com/Mitra-Apps/be-user-service v0.0.0-20240226081518-187be354815c/go.mod h1:R1dVMBvuO1tdpcgHSvcY8jTrRDDd+bXbYm7JFWO+UA0=
 github.com/Mitra-Apps/be-user-service v0.0.0-20240304101816-e90a810ad690 h1:dFplnXuXXVSeXU7a/yaArqAuRRlcdhsJ/mlK22vEF44=
@@ -372,6 +374,8 @@ google.golang.org/genproto/googleapis/api v0.0.0-20240314234333-6e1732d8331c h1:
 google.golang.org/genproto/googleapis/api v0.0.0-20240314234333-6e1732d8331c/go.mod h1:VQW3tUculP/D4B+xVCo+VgSq8As6wA9ZjHl//pmk+6s=
 google.golang.org/genproto/googleapis/api v0.0.0-20240318140521-94a12d6c2237 h1:RFiFrvy37/mpSpdySBDrUdipW/dHwsRwh3J3+A9VgT4=
 google.golang.org/genproto/googleapis/api v0.0.0-20240318140521-94a12d6c2237/go.mod h1:Z5Iiy3jtmioajWHDGFk7CeugTyHtPvMHA4UTmUkyalE=
+google.golang.org/genproto/googleapis/api v0.0.0-20240325203815-454cdb8f5daa h1:Jt1XW5PaLXF1/ePZrznsh/aAUvI7Adfc3LY1dAKlzRs=
+google.golang.org/genproto/googleapis/api v0.0.0-20240325203815-454cdb8f5daa/go.mod h1:K4kfzHtI0kqWA79gecJarFtDn/Mls+GxQcg3Zox91Ac=
 google.golang.org/genproto/googleapis/rpc v0.0.0-20240228224816-df926f6c8641 h1:DKU1r6Tj5s1vlU/moGhuGz7E3xRfwjdAfDzbsaQJtEY=
 google.golang.org/genproto/googleapis/rpc v0.0.0-20240228224816-df926f6c8641/go.mod h1:UCOku4NytXMJuLQE5VuqA5lX3PcHCBo8pxNyvkf4xBs=
 google.golang.org/genproto/googleapis/rpc v0.0.0-20240311173647-c811ad7063a7 h1:8EeVk1VKMD+GD/neyEHGmz7pFblqPjHoi+PGQIlLx2s=
@@ -380,6 +384,8 @@ google.golang.org/genproto/googleapis/rpc v0.0.0-20240314234333-6e1732d8331c h1:
 google.golang.org/genproto/googleapis/rpc v0.0.0-20240314234333-6e1732d8331c/go.mod h1:WtryC6hu0hhx87FDGxWCDptyssuo68sk10vYjF+T9fY=
 google.golang.org/genproto/googleapis/rpc v0.0.0-20240318140521-94a12d6c2237 h1:NnYq6UN9ReLM9/Y01KWNOWyI5xQ9kbIms5GGJVwS/Yc=
 google.golang.org/genproto/googleapis/rpc v0.0.0-20240318140521-94a12d6c2237/go.mod h1:WtryC6hu0hhx87FDGxWCDptyssuo68sk10vYjF+T9fY=
+google.golang.org/genproto/googleapis/rpc v0.0.0-20240325203815-454cdb8f5daa h1:RBgMaUMP+6soRkik4VoN8ojR2nex2TqZwjSSogic+eo=
+google.golang.org/genproto/googleapis/rpc v0.0.0-20240325203815-454cdb8f5daa/go.mod h1:WtryC6hu0hhx87FDGxWCDptyssuo68sk10vYjF+T9fY=
 google.golang.org/grpc v1.17.0/go.mod h1:6QZJwpn2B+Zp71q/5VxRsJ6NXXVCE5NRUHRo+f3cWCs=
 google.golang.org/grpc v1.19.0/go.mod h1:mqu4LbDTu4XGKhr4mRzUsmM4RtVoemTSY81AxZiDr8c=
 google.golang.org/grpc v1.23.0/go.mod h1:Y5yQAOtifL1yxbo5wqy6BxZv8vAUGQwXBOALyacEbxg=
