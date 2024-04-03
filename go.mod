@@ -13,7 +13,7 @@ require (
 	filippo.io/edwards25519 v1.1.0 // indirect
 	github.com/KyleBanks/depth v1.2.1 // indirect
 	github.com/Mitra-Apps/be-store-service v0.0.0-20240326014317-78ba358719ed // indirect
-	github.com/Mitra-Apps/be-user-service v0.0.0-20240304101816-e90a810ad690 // indirect
+	github.com/Mitra-Apps/be-user-service v0.0.0-20240403012944-597f3235ada0 // indirect
 	github.com/Mitra-Apps/be-utility-service v0.0.0-20240319082141-b4c292235e6f // indirect
 	github.com/armon/go-radix v1.0.0 // indirect
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
