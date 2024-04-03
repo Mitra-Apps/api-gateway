@@ -18,6 +18,10 @@ func (r *Rest) registerUserService(e *echo.Echo) {
 	doc.GET("", echo.WrapHandler(httpProxy))
 	doc.GET("/openapi.yaml", echo.WrapHandler(httpProxy))
 
+	config := e.Group("/api/v1/config")
+	// config group api
+	config.POST("/set-variable", echo.WrapHandler(httpProxy))
+
 	user := e.Group("/api/v1/users")
 	// user group api
 	user.GET("", echo.WrapHandler(httpProxy))
@@ -29,4 +33,5 @@ func (r *Rest) registerUserService(e *echo.Echo) {
 	user.POST("/verify-token", echo.WrapHandler(httpProxy))
 	user.POST("/resend-otp", echo.WrapHandler(httpProxy))
 	user.POST("/change-password", echo.WrapHandler(httpProxy))
+	user.GET("/refresh-token", echo.WrapHandler(httpProxy))
 }
