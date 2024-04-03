@@ -26,6 +26,8 @@ github.com/Mitra-Apps/be-store-service v0.0.0-20240404085455-58fcfb0b8d68 h1:jbc
 github.com/Mitra-Apps/be-store-service v0.0.0-20240404085455-58fcfb0b8d68/go.mod h1:EgmXA7jRCqfF28TVemFWJzvnls/+0NRtYr1BrDED2SA=
 github.com/Mitra-Apps/be-store-service v0.0.0-20240417025045-973e643733e4 h1:Yet4cfGHff/fDBHSloWxgL1DT+2shkBZK0gK+RVFDRg=
 github.com/Mitra-Apps/be-store-service v0.0.0-20240417025045-973e643733e4/go.mod h1:e8HDLd69g5kOacTP0ZIgyJZVS2ik83qGLb5ln/uSx88=
+github.com/Mitra-Apps/be-store-service v0.0.0-20240423024930-620c42867c04 h1:wnTY+2wzztZaHZ6zDsk0ac9OphOP62LzoSs2t3zavIk=
+github.com/Mitra-Apps/be-store-service v0.0.0-20240423024930-620c42867c04/go.mod h1:e8HDLd69g5kOacTP0ZIgyJZVS2ik83qGLb5ln/uSx88=
 github.com/Mitra-Apps/be-user-service v0.0.0-20240226081518-187be354815c h1:txxDbqskQLj9ES7Q9rOTmsUUEHW/qgIDAejr7/cx5u4=
 github.com/Mitra-Apps/be-user-service v0.0.0-20240226081518-187be354815c/go.mod h1:R1dVMBvuO1tdpcgHSvcY8jTrRDDd+bXbYm7JFWO+UA0=
 github.com/Mitra-Apps/be-user-service v0.0.0-20240304101816-e90a810ad690 h1:dFplnXuXXVSeXU7a/yaArqAuRRlcdhsJ/mlK22vEF44=
@@ -228,6 +230,8 @@ github.com/prometheus/procfs v0.12.0 h1:jluTpSng7V9hY0O2R9DzzJHYb2xULk9VTR1V1R/k
 github.com/prometheus/procfs v0.12.0/go.mod h1:pcuDEFsWDnvcgNzo4EEweacyhjeA9Zk3cnaOZAZEfOo=
 github.com/prometheus/procfs v0.13.0 h1:GqzLlQyfsPbaEHaQkO7tbDlriv/4o5Hudv6OXHGKX7o=
 github.com/prometheus/procfs v0.13.0/go.mod h1:cd4PFCR54QLnGKPaKGA6l+cfuNXtht43ZKY6tow0Y1g=
+github.com/prometheus/procfs v0.14.0 h1:Lw4VdGGoKEZilJsayHf0B+9YgLGREba2C6xr+Fdfq6s=
+github.com/prometheus/procfs v0.14.0/go.mod h1:XL+Iwz8k8ZabyZfMFHPiilCniixqQarAy5Mu67pHlNQ=
 github.com/rogpeppe/go-internal v1.12.0 h1:exVL4IDcn6na9z1rAb56Vxr+CgyK3nn3O+epU5NdKM8=
 github.com/rogpeppe/go-internal v1.12.0/go.mod h1:E+RYuTGaKKdloAfM02xzb0FW3Paa99yedzYV+kq4uf4=
 github.com/rs/xid v1.5.0 h1:mKX4bl4iPYJtEIxp6CYiUuLQ/8DYMoz0PUdtGgMFRVc=
