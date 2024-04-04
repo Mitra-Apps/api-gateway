@@ -1,7 +1,7 @@
 version: "3.0"
 services:
   stag-api-gateway:
-    image: ${ECR_REGISTRY}/${IMAGE_NAME}:${TAG}
+    image: ${IMAGE_NAME}:${TAG}
     ports:
       - 7000:7000
     environment:
