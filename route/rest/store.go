@@ -61,4 +61,5 @@ func (r *Rest) registerStoreService(e *echo.Echo) {
 	uomApi.POST("", echo.WrapHandler(httpProxy))
 	uomApi.PUT("/:uom_id", echo.WrapHandler(httpProxy))
 	e.PUT("/api/v1/product/:product_id", echo.WrapHandler(httpProxy))
+	e.DELETE("/api/v1/product/:product_id", echo.WrapHandler(httpProxy))
 }
