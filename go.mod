@@ -12,7 +12,7 @@ require (
 require (
 	filippo.io/edwards25519 v1.1.0 // indirect
 	github.com/KyleBanks/depth v1.2.1 // indirect
-	github.com/Mitra-Apps/be-store-service v0.0.0-20240417025045-973e643733e4 // indirect
+	github.com/Mitra-Apps/be-store-service v0.0.0-20240423024930-620c42867c04 // indirect
 	github.com/Mitra-Apps/be-user-service v0.0.0-20240408050620-e3936e389476 // indirect
 	github.com/Mitra-Apps/be-utility-service v0.0.0-20240319082141-b4c292235e6f // indirect
 	github.com/armon/go-radix v1.0.0 // indirect
@@ -60,7 +60,7 @@ require (
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
-	github.com/prometheus/procfs v0.13.0 // indirect
+	github.com/prometheus/procfs v0.14.0 // indirect
 	github.com/rogpeppe/go-internal v1.12.0 // indirect
 	github.com/rs/xid v1.5.0 // indirect
 	github.com/santhosh-tekuri/jsonschema v1.2.4 // indirect
